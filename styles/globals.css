@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border font-semibold;
+  }
+  body {
+    @apply bg-[#fff3e4];
+  }
+}
+@layer components {
+  .navHeading {
+    @apply font-bold mb-3;
+  }
+  .footerLinks li {
+    @apply mb-1 hover:underline underline-offset-2 cursor-pointer;
+  }
+}
